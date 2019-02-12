@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite_test/splash.dart';
-import 'package:sqflite_test/test-screen.dart';
+import 'package:sqflite_test/screens/home-screen.dart';
+import 'package:sqflite_test/screens/splash-screen.dart';
+
 
 void main() {
   runApp(MyApp());
 }
 
 var routes = <String, WidgetBuilder>{
-  "/home": (BuildContext context) => TestScreen(),
+  "/home": (BuildContext context) => HomeScreen(),
 };
 
 class MyApp extends StatefulWidget {
@@ -20,10 +21,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: routes,
-      title: 'Caching Test',
+      title: 'SQFlite Test',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        buttonColor: Colors.blueAccent,
       ),
       home: SplashScreen(),
     );

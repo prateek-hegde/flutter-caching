@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:flutter_flux/flutter_flux.dart';
-import 'package:sqflite_test/dataModel.dart';
-import 'package:sqflite_test/database.dart';
+import 'package:sqflite_test/database/database.dart';
+import 'package:sqflite_test/models/posts-model.dart';
+
 
 class PostRepo {
   Future<Stream<Posts>> getPosts() async {

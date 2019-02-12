@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:sqflite_test/store.dart';
 import 'package:flutter_flux/flutter_flux.dart';
+import 'package:sqflite_test/stores/post-store.dart';
+
 
 class SplashScreen extends StatefulWidget {
   @override

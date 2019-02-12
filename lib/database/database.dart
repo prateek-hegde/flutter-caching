@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:sqflite_test/dataModel.dart';
+import 'package:sqflite_test/models/posts-model.dart';
+
 
 class DBProvider {
   DBProvider._();
